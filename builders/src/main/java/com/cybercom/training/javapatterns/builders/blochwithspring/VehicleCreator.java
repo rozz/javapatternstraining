@@ -1,4 +1,4 @@
-package com.cybercom.training.javapatterns.builders.bloch;
+package com.cybercom.training.javapatterns.builders.blochwithspring;
 
 public class VehicleCreator {
     public static void main(String... args) {

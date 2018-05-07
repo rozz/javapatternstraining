@@ -66,5 +66,6 @@
 
     <modules>
         <module>builders</module>
+        <module>builder-spring</module>
     </modules>
 </project>

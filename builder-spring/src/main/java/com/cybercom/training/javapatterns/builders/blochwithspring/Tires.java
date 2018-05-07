@@ -1,4 +1,4 @@
-package com.cybercom.training.javapatterns.builders.bloch;
+package com.cybercom.training.javapatterns.builders.blochwithspring;
 
 public class Tires {
     private final String type;

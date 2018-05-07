@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="vehicleBuilder" class="com.cybercom.training.javapatterns.builders.blochwithspring.Vehicle$Builder">
+        <property name="tires">
+            <bean class="com.cybercom.training.javapatterns.builders.blochwithspring.Tires">
+                <constructor-arg name="type" value="Dębica Passio 2 175/65 R14 82 T" />
+            </bean>
+        </property>
+        <property name="engine">
+            <bean class="com.cybercom.training.javapatterns.builders.blochwithspring.Engine">
+                <constructor-arg name="model" value="1.6 16V 105 KM" />
+            </bean>
+        </property>
+        <property name="body">
+            <bean class="com.cybercom.training.javapatterns.builders.blochwithspring.Body">
+                <constructor-arg name="type" value="Sedan" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean name="vehicle" factory-bean="vehicleBuilder" factory-method="build" />
+</beans>
