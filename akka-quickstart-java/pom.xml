@@ -5,17 +5,21 @@
     <groupId>hello-akka-java</groupId>
     <artifactId>app</artifactId>
     <version>1.0</version>
+    
+    <properties>
+        <akka.version>[2.5.16,)</akka.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_2.12</artifactId>
-            <version>2.5.12</version>
+            <version>${akka.version}</version>
         </dependency>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-testkit_2.12</artifactId>
-            <version>2.5.12</version>
+            <version>${akka.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
